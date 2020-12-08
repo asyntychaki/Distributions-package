@@ -11,9 +11,9 @@ class Distribution():
 	visualizing a probability distribution.
 	
 	Attributes:
-	mean (float) representing the mean value of the distribution
-	stdev (float) representing the standard deviation of the distribution
-	data_list (list of floats) a list of floats extracted from the data file
+        mean (float) representing the mean value of the distribution
+        stdev (float) representing the standard deviation of the distribution
+        data_list (list of floats) a list of floats extracted from the data file
 	"""
     
     def __init__(self, mu=0, sigma=1):
@@ -28,7 +28,7 @@ class Distribution():
 		one number (float) per line. The numbers are stored in the data attribute.
 				
 		Args:
-		file_name (string): name of a file to read from
+            file_name (string): name of a file to read from
         
 		Returns: None
         """
