@@ -8,7 +8,7 @@ Created on Tue Dec  8 15:40:31 2020
 
 import math
 import matplotlib.pyplot as plt
-from .Generaldistribution import Distribution # The '.' id required only for Python 3
+from .Generaldistribution import Distribution # The '.' is required only for Python 3
 
 
 class Gaussian(Distribution):
