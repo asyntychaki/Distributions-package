@@ -7,16 +7,16 @@ Created on Tue Dec  8 15:19:39 2020
 """
 
 class Distribution():
+    """ Generic distribution class for calculating and 
+	visualizing a probability distribution.
+	
+	Attributes:
+	mean (float) representing the mean value of the distribution
+	stdev (float) representing the standard deviation of the distribution
+	data_list (list of floats) a list of floats extracted from the data file
+	"""
     
     def __init__(self, mu=0, sigma=1):
-        """ Generic distribution class for calculating and 
-		visualizing a probability distribution.
-	
-		Attributes:
-		mean (float) representing the mean value of the distribution
-		stdev (float) representing the standard deviation of the distribution
-		data_list (list of floats) a list of floats extracted from the data file
-		"""
         
         self.mean = mu
         self.stdev = sigma
@@ -33,6 +33,7 @@ class Distribution():
 		Returns: None
         """
         
+        # This code opens a data file and appends the data to a list called data_list
         with open(file_name) as file:
             data_list = []
             line = file.readline()
