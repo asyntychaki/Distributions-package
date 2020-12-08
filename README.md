@@ -15,5 +15,5 @@ It is available at PyPI and can be installed using:
 ## File Descriptions:
 * <b>distributions/Generaldistribution.py:</b> A generic distribution class for calculating and visualizing a probability distribution.
 * <b>distributions/Gaussiandistribution.py:</b>
-* <b>distributions/__init__.py:</b>
+* <b>distributions/_init_.py:</b>
 * <b>setup.py:</b> The package setup file.
