@@ -3,12 +3,12 @@
 This is an OOP-based package named <i>distributions</i> for calculating and visualizing Gaussian and Binomial distributions of numerical data.
 
 ## Installation:
-This package requires Python 3.x versions. It has the following dependencies:
+The <i>distributions</i> package requires Python 3.x versions. It has the following dependencies:
 
 * Numpy
 * ?
 
-The package is available at PyPI and can be installed using:
+It is available at PyPI and can be installed using:
 >> pip install distributions
 
 
