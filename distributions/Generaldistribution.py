@@ -16,7 +16,7 @@ class Distribution():
         data_list (list of floats) a list of floats extracted from the data file
 	"""
     
-    def __init__(self, mu=0, sigma=1):
+    def __init__(self, mu, sigma):
         
         self.mean = mu
         self.stdev = sigma

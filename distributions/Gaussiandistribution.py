@@ -35,12 +35,12 @@ class Gaussian(Distribution):
 		Returns: 
              mean of the data set
 		"""
-					
+        
         self.mean = sum(self.data) / len(self.data)
         
         return self.mean
-    
-    
+        
+				
     
     def calculate_stdev(self, sample=True):
         """Method to calculate the standard deviation of the data set.
@@ -59,40 +59,38 @@ class Gaussian(Distribution):
         
         sigma = 0
         for num in self.data:
-            sigma += (num - self.mean)**2
+            sigma += (num - self.calculate_mean())**2
         
         self.stdev = math.sqrt( sigma / n)
         
         return self.stdev
     
     
-    def read_data_file(self, file_name, sample=True):
-        """Method to read in data from a txt file. 
-        It overwrites the read_data_file method of the parent general distribution class.
-        After reading in the file, the mean and standard deviation are calculated      
-        
-        Args:
-            file_name (string): name of a file to read from
-        
-        Returns: None
-        """
-        
-        # This code opens a data file and appends the data to a list called data_list
-        with open(file_name) as file:
-            data_list = []
-            line = file.readline()
-            while line:
-                data_list.append(int(line))
-                line = file.readline()
-        file.close()
     
-    
-        self.data = data_list
-        # Update self.mean with the mean of the data_list. 
-        self.mean = self.calculate_mean()
-        # Update self.stdev with the standard deviation of the data_list.
-        self.stdev = self.calculate_stdev(sample)
-    
+    	#def read_data_file(self, file_name, sample=True):
+	#
+	#	"""Function to read in data from a txt file. The txt file should have
+	#	one number (float) per line. The numbers are stored in the data attribute. 
+	#	After reading in the file, the mean and standard deviation are calculated
+	#			
+	#	Args:
+	#		file_name (string): name of a file to read from
+	#	
+	#	Returns:
+	#		None
+	#	
+	#	"""
+	#	with open(file_name) as file:
+	#		data_list = []
+	#		line = file.readline()
+	#		while line:
+	#			data_list.append(int(line))
+	#			line = file.readline()
+	#	file.close()
+	#
+	#	self.data = data_list
+	#	self.mean = self.calculate_mean()
+	#	self.stdev = self.calculate_stdev(sample)
     
     
     
@@ -116,7 +114,7 @@ class Gaussian(Distribution):
             float: probability density function output
         """
         
-        pdf = (1.0 / (self.stdev * math.sqrt(2*math.pi))) * math.exp( (-1) * ((x-self.mean) / (2*self.stdev))**2 )
+        pdf = (1.0 / (self.stdev * math.sqrt(2*math.pi))) * math.exp(-0.5*((x - self.mean) / self.stdev) ** 2)
     
         return pdf
     
@@ -198,3 +196,4 @@ class Gaussian(Distribution):
     
     
     
+
