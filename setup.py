@@ -8,10 +8,10 @@ Created on Tue Dec  8 14:18:36 2020
 
 from setuptools import setup
 
-setup(name = 'distributions',
+setup(name = 'distributions-asyn',
       version = '0.1',
       description = 'Gaussian and Binomial distributions',
-      packages = ['distributions'],
+      packages = ['distributions-asyn'],
       classifiers=[
                    # How mature is this project?
                    'Development Status :: 5 - Production/Stable',
