@@ -12,6 +12,8 @@ setup(name = 'distributions-asyn',
       version = '0.1',
       description = 'Gaussian and Binomial distributions',
       packages = ['distributions-asyn'],
+      author = 'Anastasia Syntychaki',
+      author_email = 'asyntychaki@gmail.com',
       classifiers=[
                    # How mature is this project?
                    'Development Status :: 5 - Production/Stable',
