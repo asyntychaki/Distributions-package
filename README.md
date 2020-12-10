@@ -19,4 +19,4 @@ It is available at PyPI and can be installed using:
 * <b>distributions-asyn/\_\_init\_\_.py:</b> The package initialization file.
 * <b>distributions-asyn/setup.cfg:</b> README.md metadata
 * <b>distributions-asyn/license.txt:</b> Copyright information
-* <b>setup.py:</b> The package setup with package metadata.
+* <b>setup.py:</b> Setup file with package metadata.
