@@ -1,6 +1,6 @@
 # Distributions-package
 ## About:
-This is an OOP-based package named <i>distributions</i> for calculating and visualizing Gaussian and Binomial distributions of numerical data.
+This is an OOP-based package named <i>distributions-asyn</i> for calculating and visualizing Gaussian and Binomial distributions of numerical data.
 
 ## Installation:
 The <i>distributions-asyn</i> package requires Python 3.x versions. It has the following dependencies:
