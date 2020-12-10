@@ -7,10 +7,25 @@ Created on Tue Dec  8 14:18:36 2020
 """
 
 from setuptools import setup
+from codecs import open # For reading README.md
+
+
+
+# Get the long description from the README.md file
+try:
+    with open('README.md', encoding='utf-8') as f:
+        long_description = f.read()
+except: # No long description
+    long_description = ""
+    pass
+    
+    
 
 setup(name = 'distributions-asyn',
-      version = '0.1',
+      version = '1.0',
       description = 'Gaussian and Binomial distributions',
+      long_description = long_description,
+      long_description_content_type = 'text/markdown',
       packages = ['distributions-asyn'],
       author = 'Anastasia Syntychaki',
       author_email = 'asyntychaki@gmail.com',

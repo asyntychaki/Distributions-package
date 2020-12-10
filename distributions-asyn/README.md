@@ -1,4 +1,9 @@
 # Distributions-package
+
+Author: Anastasia Syntychaki
+
+Email: asyntychaki@gmail.com
+
 ## About:
 This is an OOP-based package named <i>distributions-asyn</i> for calculating and visualizing Gaussian and Binomial distributions of numerical data.
 
